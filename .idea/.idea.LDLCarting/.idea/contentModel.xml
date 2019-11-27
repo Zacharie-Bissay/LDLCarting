@@ -133,6 +133,7 @@
             </e>
           </e>
         </e>
+        <e p="obstacle.cs" t="Include" />
       </e>
       <e p="LDLCarting.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

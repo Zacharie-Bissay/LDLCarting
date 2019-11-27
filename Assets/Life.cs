@@ -15,11 +15,11 @@ public class Life : MonoBehaviour
 
     public void TakeDamage()
     {
-        
+        lives -= 1;
     }
     // Update is called once per frame
     void Update()
     {
-        
+        text.text = lives.ToString();
     }
 }

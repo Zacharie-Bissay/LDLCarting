@@ -34,6 +34,8 @@ namespace KartGame.KartSystems
             get { return m_HopHeld; }
         }
 
+        public GameObject ObstacleMouvant;
+
         float m_Acceleration;
         float m_Steering;
         bool m_HopPressed;
@@ -73,6 +75,11 @@ namespace KartGame.KartSystems
             m_HopPressed |= Input.GetKeyDown (KeyCode.Space);
             m_BoostPressed |= Input.GetKeyDown (KeyCode.RightShift);
             m_FirePressed |= Input.GetKeyDown (KeyCode.RightControl);
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                Instantiate(ObstacleMouvant, transform.position, Quaternion.identity);
+            }
         }
 
         void FixedUpdate ()
